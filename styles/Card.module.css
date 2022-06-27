@@ -1,0 +1,173 @@
+.card {
+    background: #FFFFFF;
+    border: 1px solid #C2C2C2;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding-top: 64px;
+    padding-bottom: 20.54px;
+    padding-left: 67px;
+    padding-right: 67px;
+    width: 545px;
+    height: 726px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px auto 0 auto;
+}
+
+.textHigh {
+    margin-top: 0;
+    margin-bottom: 64px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 39.06px;
+    line-height: 48px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+}
+
+
+.superField {
+    display: flex;
+    padding: 25px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    width: 100%;
+    height: 80px;
+    background: rgba(196, 219, 228, 0.24);
+    border: 1px solid #8AA4FF;
+    border-radius: 15px;
+
+
+}
+
+.inputField {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    outline: none;
+    border: none;
+    background: none;
+
+    color: #000000;
+    z-index: 5;
+    cursor: text;
+}
+
+.inputField::-webkit-outer-spin-button, .inputField::-webkit-inner-spin-button {
+    display: none;
+}
+
+
+
+.labelFor {
+    position: absolute;
+    transition: 0.3s;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.inputField:focus+.labelFor {
+    transition: 0.3s;
+    transform: translateX(-19px) translateY(-23px);
+    font-size: 16px;
+}
+
+.superField:focus-within {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: rgba(137, 182, 198, 0.24);
+    border: 1px solid #567afb;
+}
+
+.inputField:not(:placeholder-shown)+.labelFor {
+    transition: 0.3s;
+    transform: translateX(-19px) translateY(-23px);
+    font-size: 16px;
+}
+
+
+.doubleField {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 48px;
+}
+
+.doubleField .superField {
+    width: 185px;
+}
+
+.button {
+    transition: color 0.3s;
+    margin-top: 48px;
+    width: 100%;
+    height: 80px;
+    background-color: #0075FF;
+    border: 1px solid #8AA4FF;
+    box-shadow: 0px 8px 16px #8AA4FF;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 21px;
+    text-align: center;
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 38px;
+    cursor: pointer;
+    color: #FFFFFF;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.button:hover::after {
+    width: 100%;
+}
+
+.button::after {
+    position: absolute;
+    content: '';
+    background-color: #567afb;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transform-origin: left;
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.buttonInactive {
+    transition: all 0.3s;
+    margin-top: 48px;
+    width: 100%;
+    height: 80px;
+    background-color: #636363;
+    border: 1px solid #8AA4FF;
+    box-shadow: 0px 8px 16px #8AA4FF;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 21px;
+    text-align: center;
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 38px;
+    cursor: not-allowed;
+    color: #FFFFFF;
+}
